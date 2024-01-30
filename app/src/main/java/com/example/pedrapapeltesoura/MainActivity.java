@@ -66,16 +66,16 @@ public class MainActivity extends AppCompatActivity {
             textResult.setText("Você Perdeu :(");
 
             ptsUserValue = ptsUserValue + 1;
-            ptsUser.setText(Integer.toString(ptsUserValue));
-            ptsUser.setTextColor(Color.GREEN);
+            ptsApp.setText(Integer.toString(ptsUserValue));
+            ptsApp.setTextColor(Color.RED);
         }else if((escolhaUsuario == "pedra" && escolhaApp == "tesoura") ||
                 (escolhaUsuario == "papel" && escolhaApp == "pedra") ||
                 (escolhaUsuario == "tesoura" && escolhaApp == "papel") ){
             textResult.setText("Você Ganhou ^^");
 
             ptsAppValue = ptsAppValue + 1;
-            ptsApp.setText(Integer.toString(ptsAppValue));
-            ptsApp.setTextColor(Color.RED);
+            ptsUser.setText(Integer.toString(ptsAppValue));
+            ptsUser.setTextColor(Color.GREEN);
         }else{
             textResult.setText("Empate");
         }
